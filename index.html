@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/fav-300x300.png" type="image/png">
+    <title>Simulador WebChat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            background: url('./assets/bg-1.png') no-repeat center center;
+            background-size: cover;
+        }
+        h1 {
+            color: #DDD;
+        }
+        img {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulação de atendimento WebChat - Upchat</h1>
+
+   <script type="module">
+    (function(d) {
+    window.omniChatQueueId = 33;
+    window.omniChatDomain = 'heptanet.atenderbem.com';
+    var s = d.createElement('script');s.async = true;
+    s.src = 'https://statics.atenderbem.com/js/wbchat.min.js';
+    (d.head || d.body).appendChild(s);
+  })(document);
+</script>
+
+</body>
+</html>   
